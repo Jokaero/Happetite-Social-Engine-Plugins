@@ -1,0 +1,15 @@
+/* Image Rotate Slide */
+#slide-images	{
+  width: 100%;
+  height: 583px; 
+  position:relative; 
+}
+
+#slide-images img {
+  display:block; 
+  position:absolute; 
+  top:0; 
+  left:0; 
+  z-index:1;
+  width: 100%;
+}

@@ -1,0 +1,119 @@
+
+/*Tab Container*/
+.layout_core_container_tabs.seaocore_profile_cover_has_tabs > div {
+  clear: both;
+  margin: 0;
+  overflow: hidden;
+}
+.layout_core_container_tabs.seaocore_profile_cover_has_tabs > div.layout_advancedactivity_home_feeds{
+  overflow: inherit;
+}
+
+/*Profile Tabs*/
+.layout_core_container_tabs div.tabs_alt{
+  background:none !important;
+  box-shadow: none !Important;
+  border:none !important;
+  border-radius:0;
+  padding:0;
+  margin:-54px 0 0 210px;
+  position:absolute;
+  overflow: inherit;
+  z-index:9;
+}
+[dir="rtl"] .layout_core_container_tabs div.tabs_alt{
+  margin:-53px 210px 0 0;
+}
+div.tabs_alt > ul{
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+}
+div.tabs_alt > ul > li{
+  border-width:0 1px;
+  float:left;
+  margin:0;
+  padding:0;
+  line-height: normal;
+}
+[dir="rtl"] div.tabs_alt > ul > li{
+  float: right;
+}
+div.tabs_alt > ul > li + li{
+  border-left-width:0px;
+}
+[dir="rtl"] div.tabs_alt > ul > li + li{
+  border-left-width:1px;
+  border-right-width:0px;
+}
+div.tabs_alt > ul > li.active{
+  background:transparent url(../images/icons/up-gray.png) no-repeat bottom center;
+}
+div.tabs_alt > ul > li a,
+div.tabs_alt > ul > li a:hover,
+div.tabs_alt > ul > li.active > a,
+div.tabs_alt > ul > li.tab_open > a{
+  border:none !important;
+  border-radius:0;
+  float:left;
+  /*font-size:13px;*/
+  margin:0;
+  padding:11px 20px 11px;
+  top:0;
+	text-transform: uppercase;
+}
+[dir="rtl"] div.tabs_alt > ul > li a,
+[dir="rtl"] div.tabs_alt > ul > li a:hover,
+[dir="rtl"] div.tabs_alt > ul > li.active > a,
+[dir="rtl"] div.tabs_alt > ul > li.tab_open > a{
+  float: right;
+}
+div.tabs_alt > ul > li a:hover{
+  background-color:rgba(204, 204, 204, 0.1);
+}
+.seaocore_profile_cover_has_tabs div.tabs_alt > ul > li a:hover{
+  background-color:rgba(0, 0, 0, 0.7);
+}
+.seaocore_profile_cover_has_tabs div.tabs_alt > ul > li.active > a,
+.seaocore_profile_cover_has_tabs div.tabs_alt > ul > li.active > a:hover,
+.seaocore_profile_cover_has_tabs div.tabs_alt > ul > li.tab_open > a {
+	background-color:rgba(0, 0, 0, 0.7) !important;
+}
+div.tabs_alt > ul > li.active > a,
+div.tabs_alt > ul > li.active > a:hover,
+div.tabs_alt > ul > li.tab_open > a{
+  background-color:rgba(204, 204, 204, 0.1);
+  top:0;
+  position:static;
+}
+div.tabs_alt > ul > li.active > a,
+div.tabs_alt > ul > li.active > a:hover{
+  background-color:transparent;
+}
+.tab_pulldown_contents_wrapper{
+  margin-top:40px;
+}
+.layout_core_container_tabs.seaocore_profile_cover_has_tabs{
+  clear: both;
+}
+.layout_core_container_tabs.seaocore_profile_cover_has_tabs .tabs_alt + div{
+  clear:both;
+  margin:0;
+}
+/*If there is no profile*/
+.seaocore_profile_cover_no_profile_photo div.tabs_alt{
+  margin:-53px 0 0 0px;
+  z-index: 12;
+}
+/*More Pulldown*/
+.tab_pulldown_contents_wrapper{
+  border-radius:0;
+  padding:0;
+}
+.tab_pulldown_contents,
+.tab_pulldown_contents ul{
+  background:none;
+  padding:0;
+  margin:0;
+}

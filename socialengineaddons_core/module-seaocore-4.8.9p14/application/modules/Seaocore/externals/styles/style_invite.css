@@ -1,0 +1,80 @@
+/* $Id: styles_invite.css 2011-08-026 9:40:21Z SocialEngineAddOns Copyright 2010-2011 BigStep Technologies Pvt. Ltd. $ */
+
+/*Search Box*/
+.seaocore_invite_left{
+	background-image:url(../images/blk-bg.png);
+	border-width:1px;
+	float:left;
+	margin:0 15px 0 0;
+	width:200px;
+}
+html[dir="rtl"] .seaocore_invite_left{
+	float:right;
+	margin:0 0 0 15px;
+}
+.seaocore_invite_left_title{
+	border-bottom-width:1px;
+	font-weight:bold;
+	padding:5px 10px;
+}
+.seaocore_invite_search_form{
+	padding:10px;
+}
+.seaocore_invite_search_form .form-wrapper{
+  clear:both;
+  font-size:11px;
+  overflow:hidden;
+	margin-bottom:7px;
+}
+.seaocore_invite_search_form #done-wrapper{
+	margin-bottom:0;
+}
+.seaocore_invite_search_form .form-wrapper label{
+  display:block;
+  margin-bottom:3px;
+  font-size:11px;
+}
+.seaocore_invite_search_form .form-wrapper input[type="text"]{
+	width:95%;
+}
+/*Statistics List*/
+.seaocore_invite_right{
+	overflow:hidden;
+}
+.seaocore_invite_statistics_header{
+	border-bottom-width:1px;
+	padding:5px 5px 10px;
+}
+.seaocore_invite_statistics_header select{
+	padding:5px;
+	margin:0 10px 0 0;
+}
+html[dir="rtl"] .seaocore_invite_statistics_header select{
+	margin:0 0 0 10px;
+}
+.seaocore_invite_statistics_header select.last{
+	margin:0;
+}
+.seaocore_invite_statistics_list{
+	clear:both;
+}
+.seaocore_invite_statistics_list table{
+	width:100%;
+}
+.seaocore_invite_statistics_list th{
+	background-image:url(../images/blk-bg.png);
+	text-align:left;
+	padding:5px;
+}
+.seaocore_invite_statistics_list td{
+	border-top-width:1px;
+	text-align:left;
+	padding:5px;
+}
+.seaocore_invite_statistics_list td.userid,
+.seaocore_invite_statistics_list td.username{
+	width:25%;
+}
+.seaocore_invite_statistics_list .tip{
+	margin-top:10px;
+}

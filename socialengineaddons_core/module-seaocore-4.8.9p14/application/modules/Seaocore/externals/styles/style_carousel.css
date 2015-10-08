@@ -1,0 +1,214 @@
+
+/*Carousel Widget*/
+.seaocore_carousel{
+	clear:both;
+  position:relative;
+  margin:0 auto 15px;
+}
+.seaocore_carousel_loader{
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-position:center;
+  z-index:100;
+  opacity:.5;
+}
+/*Carouse Item*/
+.seaocore_carousel_content_item_wrapper .seaocore_carousel_cnt{
+  bottom:30px;
+  left:0;
+  position:absolute;
+  right:0;
+}
+/*Carouse Controllers*/
+.seaocore_carousel .seaocore_carousel_button{
+  display:block;
+  cursor:pointer;
+  width:4%;
+  float:left;
+  margin:auto;
+  height:100%;
+	/*background-color: rgba(0, 0, 0, 0.1);*/
+	text-align: center;
+}
+.seaocore_carousel .seaocore_carousel_button i{
+	/*background:url(../images/carousel-controll-sprites.png) no-repeat 0 0;*/
+  cursor:pointer;
+  display:block;
+  /*height:25px;*/
+  margin-top:-13px;
+  outline:0 none;
+  position:absolute;
+  top:50%;
+  width:4%;
+	color: #2a6bb3;
+}
+.seaocore_carousel .seaocore_carousel_button i::before{
+	font-family: FontAwesome;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 20px;
+	opacity: 0.5;
+}
+.seaocore_carousel .seaocore_carousel_button:hover i::before 	{opacity: 1;}
+.seaocore_carousel .seaocore_carousel_left_dis i::before 			{content: "\f053"; color: rgba(0, 0, 0, 0.6);}
+.seaocore_carousel .seaocore_carousel_left i::before 					{content: "\f053";}
+.seaocore_carousel .seaocore_carousel_left:hover i::before 		{content: "\f053";}
+.seaocore_carousel .seaocore_carousel_right_dis i::before 		{content: "\f054"; color: rgba(0, 0, 0, 0.6);}
+.seaocore_carousel .seaocore_carousel_right i::before 				{content: "\f054";}
+.seaocore_carousel .seaocore_carousel_right:hover i::before 	{content: "\f054";}
+.seaocore_carousel .seaocore_carousel_up_dis i::before 				{content: "\f077"; color: rgba(0, 0, 0, 0.6);}
+.seaocore_carousel .seaocore_carousel_up i::before 						{content: "\f077";}
+.seaocore_carousel .seaocore_carousel_up:hover i::before 			{content: "\f077";}
+.seaocore_carousel .seaocore_carousel_down_dis i::before 			{content: "\f078"; color: rgba(0, 0, 0, 0.6);}
+.seaocore_carousel .seaocore_carousel_down i::before 					{content: "\f078";}
+.seaocore_carousel .seaocore_carousel_down:hover i::before 		{content: "\f078";}
+/*.seaocore_carousel .seaocore_carousel_left_dis i{background-position:0 0;}
+.seaocore_carousel .seaocore_carousel_left i{background-position:-52px 0;}
+.seaocore_carousel .seaocore_carousel_left:hover i{background-position:-26px 0;}
+.seaocore_carousel .seaocore_carousel_right_dis i{background-position:-78px 0;}
+.seaocore_carousel .seaocore_carousel_right i{background-position:-130px 0;}
+.seaocore_carousel .seaocore_carousel_right:hover i{background-position:-104px 0;}
+.seaocore_carousel .seaocore_carousel_up_dis i{background-position:0 -25px;}
+.seaocore_carousel .seaocore_carousel_up i{background-position:-52px -25px;}
+.seaocore_carousel .seaocore_carousel_up:hover i{background-position:-26px -25px;}
+.seaocore_carousel .seaocore_carousel_down_dis i{background-position:-78px -25px;}
+.seaocore_carousel .seaocore_carousel_down i{background-position:-130px -25px;}
+.seaocore_carousel .seaocore_carousel_down:hover i{background-position:-104px -25px;}*/
+
+/*Horizontal Carouse*/
+.seaocore_carousel_horizontal .seaocore_carousel_content {
+  margin:0;
+  padding:0;
+  float:left;
+  overflow:hidden;
+  position:relative;    
+}
+.seaocore_carousel_horizontal .seaocore_carousel_content{
+  overflow:hidden;
+  height:245px;
+}
+.seaocore_carousel_horizontal .seaocore_carousel_content .seaocore_carousel_content_item_wrapper{
+  display:block;
+  position:relative;
+  float:left;
+  font-size:11px;
+  text-align:center;
+  border-style:solid;
+  border-width:1px;
+  margin:0 8px 0;
+  padding:0 3px;
+  position:relative;
+  width:150px;
+}
+/*Vertical Carouse*/
+.seaocore_carousel_vertical .seaocore_carousel_content{
+  margin:5px auto;
+  padding:0;
+  overflow:hidden;
+  position:relative;
+}
+.seaocore_carousel_vertical .seaocore_carousel_content{
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+}
+.seaocore_carousel_vertical .seaocore_carousel_content .seaocore_carousel_content_item_wrapper{
+  border-width:1px;
+  border-style:solid;
+  border-bottom:none;
+  float:none;
+  margin:0 auto;
+  padding:5px 3px 0;
+  width:auto;
+}
+.seaocore_carousel_vertical .seaocore_carousel_content .seaocore_carousel_content_item{
+  height:240px;
+  width:auto
+}
+.seaocore_carousel_vertical .seaocore_carousel_controller{
+  width:50px;
+  margin:0 auto;
+}
+.seaocore_carousel_vertical .seaocore_carousel_button i{
+  position:inherit;
+  margin-top:2px;
+}
+
+/*Grid View*/
+.seaocore_carousel_grid_view {
+  clear:both;
+	overflow:hidden;
+  width:100%;
+}
+.seaocore_carousel_grid_view li{
+  border-style:solid;
+  border-width:1px;
+  float:left;
+  margin:0 8px 30px;
+  padding:0;
+  position:relative;
+  width:150px;
+}
+.seaocore_carousel_grid_view .seaocore_carousel_content_item {
+	height:255px;
+	position:relative;
+	width:100%;
+	height: 100% !important;
+	overflow: hidden;
+}
+.seaocore_carousel_grid_view .seaocore_carousel_content_item.largephoto{
+  height:310px;
+}
+.seaocore_carousel_grid_view .seaocore_carousel_content_item > a{
+  float:left;
+  width:100%;
+}
+.seaocore_carousel_grid_view .seaocore_carousel_thumb span {
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 106px;
+  margin: 5px auto;
+  width: 90%;
+}
+.seaocore_carousel_grid_view .seaocore_carousel_content_item.largephoto .seaocore_carousel_thumb span{
+  height:160px;
+}
+.seaocore_carousel_grid_view .seaocore_carousel_title{
+	clear: both;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 5px;
+	max-height: 40px;
+	overflow: hidden;
+	text-align: center;
+}
+.seaocore_carousel_grid_view .seaocore_carousel_cnt{
+	bottom: 0;
+	clear: both;
+	left: 5px;
+	padding-bottom: 5px;
+	position: absolute;
+	right: 5px;
+}
+.seaocore_carousel_grid_view .seaocore_carousel_cnt div{
+	font-size:11px;
+	margin-bottom:3px;
+}
+.seaocore_carousel_grid_view .seaocore_carousel_grid_view_list_btm {
+  padding:4px 0 0;
+}
+.seaocore_carousel_grid_view .list_rating_star{
+	margin-bottom:5px;
+}
+
+/*========================Responsive css for horizontal carausel =======================*/
+
+@media screen and (max-width:920px){
+/* Seacore carausel main container */
+.seaocore_carousel {width: 100% !important;}
+/* Content holder main container */
+.seaocore_carousel_horizontal .seaocore_carousel_content {width: 92% !important;overflow-x:visible;}
+/* Main ul container for slides */
+.seaocore_carousel_grid_view {width: 880px;}
+}

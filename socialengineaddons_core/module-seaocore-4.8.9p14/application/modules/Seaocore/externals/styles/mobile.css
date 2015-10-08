@@ -1,0 +1,515 @@
+
+
+/*icons*/
+.seaocore_icon_add{
+  background-image:url(~/application/modules/Seaocore/externals/images/add.png);
+}
+.seaocore_icon_edit{
+  background-image:url(~/application/modules/Seaocore/externals/images/edit.png);
+}
+.seaocore_icon_delete{
+  background-image:url(~/application/modules/Seaocore/externals/images/delete.png);
+}
+.seaocore_icon_create{
+  background-image:url(~/application/modules/Seaocore/externals/images/add.png);
+}
+.seaocore_icon_share{
+  background-image:url(~/application/modules/Seaocore/externals/images/share.png);
+}
+.seaocore_icon_report{
+  background-image:url(~/application/modules/Seaocore/externals/images/report.png);
+}
+.seaocore_icon_featured{
+  background-image:url(~/application/modules/Seaocore/externals/images/featured.png);
+}
+.seaocore_icon_unfeatured{
+  background-image:url(~/application/modules/Seaocore/externals/images/unfeatured.png);
+}
+.seaocore_icon_sponsored{
+  background-image:url(~/application/modules/Seaocore/externals/images/sponsored.png);
+}
+.seaocore_icon_approved{
+  background-image:url(~/application/modules/Seaocore/externals/images/approved.gif);
+}
+.seaocore_icon_disapproved{
+  background-image:url(~/application/modules/Seaocore/externals/images/disapproved.gif);
+}
+.seaocore_icon_direction{
+	background-image:url(~/application/modules/Seaocore/externals/images/direction.png);
+}
+.notification_type_replied, .activity_icon_reply_seaocore_reply, .notification_type_replied_replied{
+	background-image:url(~/application/modules/Seaocore/externals/images/replies.png);
+}
+
+/**/
+/* Common CSs */
+.dnone                   {display: none;}
+.dblock                  {display: block;}
+.fleft                   {float:left !important;}
+html[dir="rtl"] .fleft   {float:right !important;}
+.fright                  {float:right !important;}
+html[dir="rtl"] .fright  {float:left !important;}
+.clr, .clear             {clear:both !important;}
+.pabsolute               {position:absolute;}
+.prelative               {position:relative;}
+.bold                    {font-weight:bold;}
+.seaocore_txt_light      {color:$theme_font_color_light;}
+.seaocore_add            {display:none;}
+/*gutter view page start here*/
+.seaocore_gutter_photo{
+	+foreground;
+	+rounded;
+	margin-bottom: 15px;
+	overflow: hidden;
+	padding: 7px;
+	text-align: center;
+}
+.seaocore_gutter_photo img{
+	margin: 0 auto;
+	width: 99%;
+}
+.seaocore_gutter_title{
+	font-size: 17px;
+}
+.seaocore_gutter_blocks{
+  margin-bottom: 15px;
+}
+.seaocore_gutter_blocks .global_form_box{
+	padding:5px;
+}
+.seaocore_gutter_blocks input[type="text"]{
+	width:170px;
+}
+.seaocore_gutter_view{
+	overflow:hidden;
+}
+.seaocore_gutter_view .seaocore_gutter_view_title{
+	margin-bottom:5px;
+	overflow:hidden;
+}
+.seaocore_gutter_view .seaocore_gutter_view_title h3{
+  margin-bottom: 1px;
+	font-size:1.5em;
+	letter-spacing:normal;
+}
+.seaocore_gutter_view .seaocore_gutter_view_stat{
+  font-size: 8pt;
+  margin-bottom: 5px;
+  color: $theme_font_color_light;
+}
+.seaocore_gutter_view .seaocore_gutter_view_body{
+  padding: 10px 0 0 0;
+	clear:both;
+	line-height:1.5em;
+}
+/*gutter view page end here*/
+/*Profile Page Lists start here*/
+.seaocore_profile_list{
+	clear:both;
+}
+.seaocore_profile_list > li{
+	overflow: hidden;
+	padding:0px 5px 10px;
+}
+.seaocore_profile_list > li + li{
+	border-top-width: 1px;
+	padding-top: 10px;
+}
+.seaocore_profile_list .seaocore_profile_list_photo {
+	float: left;
+	margin-right: 7px;
+	overflow: hidden;
+	width: 100px;
+}
+.seaocore_profile_list .seaocore_profile_list_photo img {
+	max-width: 90px;
+}
+.seaocore_profile_list .seaocore_profile_list_options{
+	display:none;
+}
+.seaocore_profile_list .seaocore_profile_list_info {
+	overflow: hidden;
+}
+.seaocore_profile_list .seaocore_profile_list_title p{
+	font-weight:bold;
+	overflow:hidden;
+	margin-bottom:5px;
+}
+.seaocore_profile_list .seaocore_profile_list_title span  {
+	float:right;
+	margin-left:5px;
+}
+.seaocore_profile_list .seaocore_profile_list_title span.list_rating_star span {
+	float: left;
+	margin: 2px;
+}
+.seaocore_profile_list .seaocore_profile_info_date {
+	font-size: 0.8em;
+	color:$theme_font_color_light;
+}
+.seaocore_profile_list .seaocore_profile_info_blurb {
+	margin-top:5px;
+}
+.seaocore_profile_list_more{
+	clear:both;
+	margin-top:15px;
+}
+/*Profile Page Lists end here*/
+/*CSS FOR ALL SIDEBAR WIDGETS START HERE*/
+ul.seaocore_sidebar_list{
+  +foreground;
+  +rounded;
+  padding: 5px;
+}
+ul.seaocore_sidebar_list li{
+  clear: both;
+  overflow: hidden;
+  padding: 3px 5px 3px 5px;
+}
+ul.seaocore_sidebar_list li > a{
+	float:left;
+}
+ul.seaocore_sidebar_list li div a{
+	float:none;
+}
+ul.seaocore_sidebar_list .list_thumb{
+  float: left;
+  display: block;
+  width: 48px;
+  height: 48px;
+	vertical-align:top;
+}
+ul.seaocore_sidebar_list .seaocore_sidebar_list_info{
+  padding: 0px 0px 0px 6px;
+  overflow: hidden;
+}
+ul.seaocore_sidebar_list .seaocore_sidebar_list_title{
+  font-weight: bold;
+}
+ul.seaocore_sidebar_list .seaocore_sidebar_list_details{
+  font-size: .8em;
+  color: $theme_font_color_light;
+	margin-top:3px;
+}
+ul.seaocore_sidebar_list .seaocore_sidebar_list_details .rating_star_generic{
+	float:left;
+	margin:2px;
+}
+ul.seaocore_sidebar_list .more_link{
+	float:right !important;
+	font-weight:bold;
+	font-size:11px;
+}
+/*CSS FOR ALL SIDEBAR WIDGETS END HERE*/
+/*CSS FOR ALL LISTINGS SATRT HERE*/
+ul.seaocore_browse_list{
+  clear: both;
+}
+ul.seaocore_browse_list > li{
+  clear: both;
+  padding: 0px 0px 15px 0px;
+  overflow: hidden;
+	position:relative;
+}
+ul.seaocore_browse_list > li .lists_highlight{
+	background-color:$theme_foreground_background_color;
+	padding:5px;
+}
+ul.seaocore_browse_list > li + li{
+  padding-top: 15px;
+  border-top-width: 1px;
+}
+ul.seaocore_browse_list .seaocore_browse_list_photo{
+  float: left;
+  overflow: hidden;
+  margin-right: 8px;
+}
+ul.seaocore_browse_list .seaocore_browse_list_photo img{
+  width: 100px;
+}
+ul.seaocore_browse_list .seaocore_browse_list_options{
+  display:none;
+}
+ul.seaocore_browse_list .seaocore_browse_list_info{
+  overflow: hidden;
+}
+ul.seaocore_browse_list .seaocore_browse_list_info_title{
+	font-weight:bold;
+	overflow:hidden;
+}
+ul.seaocore_browse_list .seaocore_browse_list_info_title h3{
+  margin: 0px;
+	overflow:hidden;
+}
+ul.seaocore_browse_list .seaocore_browse_list_info_title p{
+  margin: 0px;
+	overflow:hidden;
+	font-size:1.3em;
+	margin-bottom:5px;
+}
+ul.seaocore_browse_list .seaocore_browse_list_info_title .seaocore_title{
+	overflow:hidden;
+	font-weight:bold;
+}
+ul.seaocore_browse_list .seaocore_browse_list_info_title span{
+	float:right;
+	margin-right:5px;
+	margin-left:5px;
+}
+ul.seaocore_browse_list .seaocore_browse_list_info_title span.list_rating_star span{
+	float:left;
+	margin:2px;
+}
+ul.seaocore_browse_list .seaocore_browse_list_info_date{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.seaocore_browse_list .seaocore_browse_list_info_blurb{
+  margin-top: 5px;
+}
+.seaocore_pagination{
+	margin-top: 10px;
+	clear:both;
+}
+/*CSS FOR ALL LISTINGS END HERE*/
+/* like button start here */
+.layout_seaocore_like_button {
+	float: left;
+	margin:0 10px 5px;
+}
+[dir="rtl"] .layout_seaocore_like_button{
+	float:right;
+}
+.seaocore_like_button a {
+	background-image:url(~/application/modules/Seaocore/externals/images/like/like_button_bg.png) !important;
+	padding:3px 5px;
+	text-decoration:none;
+	font-weight:bolder;
+	border:1px solid #cecece;
+	clear:both;
+	font-size:11px;
+	float:left;
+	outline:none;
+	background-color:#FFFFFF;
+}
+.seaocore_like_button a:hover {
+	text-decoration:none;
+	background-image:url(~/application/modules/Seaocore/externals/images/like/like_button_hover_bg.png) !important;
+}
+.seaocore_like_button a i.seaocore_like_thumbup_icon,
+.seaocore_like_button a i.seaocore_like_thumbdown_icon {
+	height:13px;
+	width:13px;
+	float:left;
+	margin-right:5px;
+}
+.seaocore_like_button a span {
+	float:left;
+}
+.seaocore_like_button a i.seaocore_like_thumbup_icon {
+	background-image:url(~/application/modules/Seaocore/externals/images/like/thumb-up.png);
+}
+.seaocore_like_button a i.seaocore_like_thumbdown_icon {
+	background-image:url(~/application/modules/Seaocore/externals/images/like/thumb-down.png);
+}
+/* like button end here */
+/* SEAOCORE TABBED WIDGETS START HERE */
+.layout_seaocore_sidebar_tabbed_widget{
+  +foreground;
+  +rounded;
+  padding: 5px 0;
+	overflow:hidden;
+	margin-bottom:15px;
+}
+.seaocore_tabs_alt{
+	background-color: $theme_tabs_background_color;
+	background-image: none;
+	+rounded(3px, false, false, true, true);
+	margin: 0px 0px 5px 0px;
+	padding-top: 2px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+.seaocore_tabs_alt > ul{
+	margin: 0px;
+	text-align: left;
+	border-bottom: 1px solid $theme_tabs_border_color;
+	padding: 0px 0px 4px 7px;
+}
+html[dir="rtl"] .seaocore_tabs_alt > ul{
+	text-align: right;
+	padding: 3px 7px 5px 0px;
+}
+.seaocore_tabs_alt > ul > li{
+	display: inline-block;
+	padding: 0px;
+	*display: inline; /* fix for IE7 */
+}
+.seaocore_tabs_alt > ul > li.active > a{
+	+rounded(3px, false, false, true, true);
+	border: 1px solid $theme_tabs_border_color;
+	border-bottom: none;
+	background-color: $theme_tabs_background_color_active;
+	color: $theme_tabs_font_color_active;
+	position: relative;
+	top: 1px;
+	padding: 5px 3px 5px 3px;
+	font-size:.8em;
+}
+.seaocore_tabs_alt > ul > li > a{
+	padding: 5px 4px 5px 4px;
+	text-decoration: none;
+	color: $theme_tabs_font_color;
+	border-bottom: none;
+	outline: none;
+	font-size:.8em;
+}
+.seaocore_tabs_alt > ul > li > a:hover {
+	background: $theme_tabs_background_color_hover;
+	color: $theme_tabs_font_color_active;
+	padding: 5px 3px 5px 3px;
+	+rounded(3px, false, false, true, true);
+	border: 1px solid $theme_tabs_border_color_hover;
+	border-bottom: none;
+}
+/* SEAOCORE TABBED WIDGETS END HERE */
+/*photo lightbox css satrt here*/
+.photo_lightbox_white_content{
+	background-color:$theme_body_background_color;
+}
+/*photo lightbox css end here*/
+/*info tooltip css satrt here*/
+.info_tip_content_wrapper{
+	background-color:$theme_body_background_color;
+}
+.info_tip_content_bottom{
+	background-color:$theme_border_color;
+	border-top:1px solid $theme_border_medium_color;
+}
+.intu_list #meassge_show,
+.tip_main_body_stat,
+.info_tip_content_wrapper .tipcl{
+	color:$theme_font_color_light;
+}
+/*info tooltip css end here*/
+/*Map*/
+.seaocore_viewmap_content{
+	position:relative;
+}
+.seaocore_viewmap_head{
+	font-size:17px;
+	margin-bottom:10px;
+}
+.seaocore_viewmap_search_area{
+	width:100% !important;
+	height:auto !important;
+	margin-bottom:15px;
+}
+.seaocore_map_dir_cont{
+	width:100%;
+}
+.seaocore_map_dir_cont table{
+	width:100%;
+}
+.seaocore_viewmap_map{
+	width:100%;
+	height:400px;
+}
+.seaocore_map{position:relative;}
+.seaocore_map_info{-moz-user-select: none;background: -moz-linear-gradient(left center , rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.5) 50px);background: -o-linear-gradient(left center , rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.5) 50px);background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.5) 50px);background: linear-gradient(left center , rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.5) 50px);bottom:19px;color:#444444;direction: ltr;font-family:Arial,sans-serif;font-size:10px;height:19px;line-height: 19px;padding-bottom:0;padding-left:50px;padding-right:2px;	position:absolute;right:0;text-align:right;white-space:nowrap;z-index:0;}
+.seaocore_map_info a{
+	color:#444444 !important;
+}
+.seaocore_db_tabs{
+	width:200px;
+	float:left;
+	margin-right:20px;
+}
+html[dir="rtl"] .seaocore_db_tabs{
+	float:right;
+	margin-left:20px;
+	margin-right:0px;
+}
+.seaocore_db_tabs ul{
+	width:100%;
+	float:left;
+	margin:0;
+	padding:0;
+}
+.seaocore_db_tabs li a{
+	background-color: $theme_buttontabs_background_color;
+	background-image: url(~/application/modules/Seaocore/externals/images/left_tabs_bg.png);
+	background-repeat:repeat-x;
+	display: block;
+	padding: 5px 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: $theme_buttontabs_font_color;
+	margin-bottom:2px;
+	outline:none;
+}
+.seaocore_db_tabs li a:hover{
+	background-color: $theme_buttontabs_background_color_hover;
+	text-decoration: none;
+	color: $theme_buttontabs_font_color_hover;
+}
+.seaocore_db_tabs li a.selected{
+	background-color: $theme_buttontabs_background_color_active;
+	color: $theme_buttontabs_font_color_active;
+}
+/**/
+.seaocore_content_loader{
+	background:url(~/application/modules/Seaocore/externals/images/loading.gif);
+	height:32px;
+	width:32px;
+	margin:40px auto;
+}
+
+/*Profile Tabs Pulldown*/
+.tabs_alt > ul > li.tab_open > a{
+  +rounded(3px, false, false, true, true);
+  border: 1px solid $theme_pulldown_border_color;
+  border-bottom: none;
+  background-color: $theme_pulldown_background_color_active;
+  color: $theme_pulldown_font_color_active;
+  position: relative;
+  top: 1px;
+  padding: 5px 6px 5px 6px;
+}
+.tab_pulldown_contents_wrapper{
+  display: none;
+  +rounded(3px, true, false, false, false);
+  overflow: hidden;
+  position: absolute;
+  padding: 2px;
+  margin-top: 21px;
+  background-color: $theme_pulldown_border_color;
+  z-index: 99;
+}
+.tab_pulldown_contents{
+  overflow: hidden;
+  background: $theme_pulldown_contents_background_color;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.tab_pulldown_contents > ul > li{
+  padding: 5px;
+  font-size: .8em;
+  min-width: 100px;
+  max-width: 250px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.tab_pulldown_contents > ul > li.active{
+  background-color: $theme_pulldown_contents_list_background_color_active;
+}
+.tab_pulldown_contents > ul > li + li{
+  border-top: 1px solid $theme_border_color;
+}
+.tab_pulldown_contents > ul > li:hover{
+  background-color: $theme_pulldown_contents_list_background_color_hover;
+  cursor: pointer;
+}
+.tabs_alt > ul > li.tab_open .tab_pulldown_contents_wrapper{
+  display: block;
+}

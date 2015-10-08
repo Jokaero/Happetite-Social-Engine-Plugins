@@ -1,0 +1,92 @@
+/* $Id: style_print.css 2011-08-026 9:40:21Z SocialEngineAddOns Copyright 2010-2011 BigStep Technologies Pvt. Ltd. $ */
+#global_content_simple {
+	width: 100%;
+}
+.seaocore_print_page {
+	clear:both;
+	padding:15px;
+}
+.seaocore_print_page * {
+	font-family:Arial, Helvetica, sans-serif;
+}
+.seaocore_print_title {
+	padding:5px;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	overflow:auto;
+}
+.seaocore_print_title span.left {
+	font-size:17px;
+	font-weight:bold;
+	overflow:hidden;
+}
+.seaocore_print_title span.right {
+	float:right;
+	font-size:13px;
+	font-style:italic;
+	font-weight:bold;
+	font-size:17px;
+	margin-left:20px;
+}
+.seaocore_print_photo {
+	margin:0 10px 10px 0;
+	float:left;
+}
+.seaocore_print_photo img{
+	max-width:200px;
+}
+.seaocore_print_details {
+	overflow:hidden;
+}
+.seaocore_print_details h4 {
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding: 0.5em 0;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+}
+.seaocore_print_profile_fields {
+	margin-top: 10px;
+	overflow: hidden;
+}
+.seaocore_print_profile_fields ul {
+	clear:both;
+	padding:0px;
+	margin:0px;
+}
+.seaocore_print_profile_fields ul > li {
+	overflow: hidden;
+}
+.seaocore_print_profile_fields ul > li + li {
+	margin-top: 5px;
+}
+.seaocore_print_profile_fields ul > li > span {
+	display: block;
+	float: left;
+	overflow: hidden;
+	min-width: 150px;
+}
+.seaocore_print_profile_fields ul > li > span + span {
+	display: block;
+	float: none;
+	overflow: hidden;
+	width:auto;
+}
+.seaocore_print_button,
+.seaocore_print_button a{
+	clear:both;
+	margin-top:10px;
+}
+/* Responsive css */
+@media screen and (max-width:768px){
+/* Print coupons */
+.seaocore_print_store {box-sizing: border-box;padding: 10px;width: 100%;}
+}
+
+@media screen and (max-width:600px){
+.seaocore_print_title > span, .seaocore_print_profile_fields > div {float: left;text-align: center;width: 100%;}	
+}
+
+@media screen and (max-width:300px){
+.seaocore_print_profile_fields .seaocore_print_details ul li span{min-width:inherit;}	
+}

@@ -1,0 +1,901 @@
+/*Profile Cover Photo Start Here*/
+.layout_siteusercoverphoto_user_cover_photo,
+.layout_sitecontentcoverphoto_content_cover_photo {
+  border:none !important;
+  padding: 0 !important;
+  clear:both;
+  margin-bottom:15px;
+  padding:0 !important;
+}
+.seaocore_profile_cover_wrapper {
+  margin:0;
+	position: relative;
+}
+.seaocore_profile_cover_photo_wrapper {
+  position:relative;
+  clear:both;
+  padding:0px;
+}
+.seaocore_profile_cover_photo {
+  overflow:hidden;
+  position:relative;
+  height:100%;
+  width:100%;
+}
+.seaocore_profile_cover_photo img {
+  width:100%;
+  min-height:100%;
+  border:none;
+  position:relative;
+}
+.seaocore_profile_cover_photo_empty {
+  border:none;
+  height:100%;
+  background-color:#fff;
+  background-image:-webkit-gradient(linear, left top, left bottom, from( rgba(226, 226, 226, .5)), to( rgba(0, 0, 0, .5))); /* Saf4+, Chrome */
+  background-image:-webkit-linear-gradient(  rgba(226, 226, 226, .5), rgba(0, 0, 0, .5)); /* Chrome 10+, Saf5.1+ */
+  background-image:-moz-linear-gradient( rgba(226, 226, 226, .5), rgba(0, 0, 0, .5)); /* FF3.6 */
+  background-image:-ms-linear-gradient( rgba(226, 226, 226, .5), rgba(0, 0, 0, .5)); /* IE10 */
+  background-image:-o-linear-gradient( rgba(226, 226, 226, .5), rgba(0, 0, 0, .5)); /* Opera 11.10+ */
+  background-image:linear-gradient( rgba(226, 226, 226, .5), rgba(0, 0, 0, .5));
+}
+.seaocore_profile_cover_photo_wrapper .draggable {
+  opacity:0.5;
+  cursor:move;
+}
+.seaocore_profile_cover_gradient{
+	background-image:-webkit-gradient(linear, left top, left bottom, from( rgba(22, 24, 27, 0)), to( rgba(22, 24, 27, 0.8))); /* Saf4+, Chrome */
+  background-image:-webkit-linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.8)); /* Chrome 10+, Saf5.1+ */
+  background-image:-moz-linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.8)); /* FF3.6 */
+  background-image:-ms-linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.8)); /* IE10 */
+  background-image:-o-linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.8)); /* Opera 11.10+ */
+  background-image:linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.8));
+	bottom: 0;
+	height: 100px;
+	position: absolute;
+	width: 100%;
+}
+/*Profile Cover Photo Endst Here*/
+/*Cover Information Starts Here*/
+.seaocore_profile_cover_head_section {
+  border-style:solid;
+  border-width:1px;
+  clear:both;
+  padding:10px 10px 20px;
+  min-height:40px;
+  position:relative;
+}
+.seaocore_profile_main_photo_wrapper{
+  width:165px;
+  float:left;
+  margin-left:20px;
+  position:relative;
+  height:2px;
+  overflow:visible;
+}
+[dir="rtl"] .seaocore_profile_main_photo_wrapper{
+  float: right;
+  margin-right:20px;
+  margin-left:0;
+}
+.seaocore_profile_main_photo {
+  background-color:#FFFFFF;
+  border-radius:3px;
+  border-style:solid;
+  border-width:1px;
+  bottom:-45px;
+  overflow:hidden;
+  padding:2px;
+  position:absolute;
+}
+.seaocore_profile_main_photo .item_photo {
+  min-height:100px;
+  max-height:160px;
+  overflow:hidden;
+  width:160px;
+}
+.seaocore_profile_main_photo .show_photo_box{
+  height:160px;
+}
+.seaocore_profile_main_photo .item_photo table {
+  height:100%;
+  width:100%;
+}
+.seaocore_profile_main_photo .item_photo table td {
+  text-align:center;
+}
+[dir="rtl"] .seaocore_profile_main_photo .item_photo table td{
+  text-align: center;
+}
+.seaocore_profile_main_photo .item_photo table td img {
+  border: 0 none !important;
+  border-radius: 0 !important;
+  /*max-height: 200px;*/
+  max-width: 160px;
+  min-height: 100px;
+  padding: 0;
+  width: 100%;
+}
+.seaocore_profile_cover_head_section_inner{
+  margin-left:195px;
+}
+[dir="rtl"] .seaocore_profile_cover_head_section_inner{
+  margin-left:0px;
+  margin-right:195px;
+}
+.seaocore_profile_coverinfo_status {
+  overflow:hidden;
+	float:left;
+}
+/*.seaocore_profile_coverinfo_status a{
+	color:#fff;
+	text-shadow:0 0 3px rgba(0, 0, 0, 0.3);
+}*/
+.seaocore_profile_coverinfo_status h2 {
+  margin-bottom:5px;
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing:normal;
+}
+.seaocore_profile_coverinfo_stats{
+  font-size: 11px;
+  margin-top: 3px;
+}
+.seaocore_profile_coverinfo_buttons {
+  float:right;
+}
+[dir="rtl"] .seaocore_profile_coverinfo_buttons{
+  float: left;
+}
+.seaocore_profile_coverinfo_buttons > div {
+  float:left;
+  margin-left:5px;
+  height: 30px;
+	text-align: center;
+}
+[dir="rtl"] .seaocore_profile_coverinfo_buttons > div{
+  float:right;
+  margin-left:0px;
+  margin-right:5px;
+}
+.seaocore_profile_coverinfo_buttons > div .layout_seaocore_like_button,
+.seaocore_profile_coverinfo_buttons > div .layout_sitelike_commoncover_like_button{
+  margin:0;
+}
+.seaocore_profile_coverinfo_buttons .seaocore_follower_count{
+	display:none;
+}
+/*Cover Information Ends Here*/
+/*If main tabs comes in top information widget then below css work*/
+/*.seaocore_profile_cover_has_tabs{
+  min-height:10px;
+}*/
+.seaocore_profile_cover_has_tabs .seaocore_profile_main_photo{
+  bottom: -12px;
+}
+.seaocore_profile_cover_has_tabs .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+  top: -85px;
+}
+.seaocore_profile_cover_has_tabs .seaocore_profile_cover_options .save-button {
+  bottom: 24px;
+  right: 20px;
+}
+[dir="rtl"] .seaocore_profile_cover_has_tabs .seaocore_profile_cover_options .save-button{
+  left:20px;
+  right: auto;
+}
+.seaocore_profile_cover_has_tabs .seaocore_profile_cover_head_section_inner {
+  margin-left:195px;
+  position:relative;
+}
+[dir="rtl"] .seaocore_profile_cover_has_tabs .seaocore_profile_cover_head_section_inner{
+  margin-left: 0;
+  margin-right: 195px;
+}
+.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_status, 
+.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_buttons{
+  bottom:30px;
+  position:absolute;
+}
+.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_status{
+  overflow:inherit;
+	max-width:55%;
+}
+.seaocore_profile_cover_info{
+	max-width:250px;
+}
+.seaocore_profile_cover_has_tabs.seaocore_profile_cover_has_fblike .seaocore_profile_coverinfo_status {
+  bottom:75px;
+}
+.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_status h2 {
+  background:none;
+  color:#FFFFFF;
+  font-size:24px;
+  margin:0 0 5px 0;
+  text-shadow:0 0 3px rgba(0, 0, 0, 0.3);
+}
+.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_stats,
+.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_stats a{
+  color:#FFFFFF;
+  text-shadow:0 0 2px rgba(0, 0, 0, 0.8);
+}
+.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_buttons {
+  right:0;
+  z-index:10;
+	margin: 0 15px;
+}
+[dir="rtl"] .seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_buttons{
+  left: 0;
+  right: auto;
+}
+.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_status .siteevent_listings_stats i,
+.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_status .siteevent_listings_stats img{
+  display: none;
+}
+.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_status .siteevent_listings_stats i + div i {
+	display: block;
+	height: 11px;
+	width: 16px;
+	background:url(../images/up_right.png) no-repeat scroll left bottom;
+}
+/*Cover photo inside tab view*/
+.seaocore_profile_cover_has_tabs + .seaocore_profile_cover_head_section {
+  border:1px solid rgba(0, 0, 0, 0.4);
+  position:absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+	width: 100%;
+	box-sizing: border-box;
+}
+.layout_core_container_tabs.seaocore_profile_cover_has_tabs div.tabs_alt {
+	z-index: 12;
+}
+.seaocore_profile_cover_has_tabs div.tabs_alt > ul > li {
+	border-left: 1px solid rgba(255, 255, 255, 0.15);
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+.seaocore_profile_cover_has_tabs div.tabs_alt > ul > li:first-child {
+  border-left: 0 none;
+}
+.seaocore_profile_cover_has_tabs div.tabs_alt > ul > li > a {
+	font-weight: normal;
+}
+.seaocore_profile_cover_has_tabs div.tabs_alt > ul > li.active {
+	background-image:none;
+}
+
+/*Icons*/
+.seaocore_profile_cover_options ul li i::before, 
+ul.seaocore_profile_options_pulldown > li > a::before, 
+ul.seaocore_profile_options_pulldown > li > ul > li > a::before {
+	float: left;
+	font-family: fontawesome;
+	font-size: 16px;
+	margin-right: 7px;
+}
+.seaocore_profile_cover_icon_photo_edit::before 	{content: "\f040";}
+.seaocore_profile_cover_icon_photo_add::before 		{content: "\f055";} 
+.seaocore_profile_cover_icon_photo_upload::before {content: "\f093";}
+.seaocore_profile_cover_icon_photo_view::before 	{content: "\f03e";}  
+.seaocore_profile_cover_icon_move::before 				{content: "\f047";} 
+.seaocore_profile_cover_icon_photo_delete::before {content: "\f056";} 
+.seaocore_profile_cover_icon_camera::before 			{content: "\f030";}  
+
+/*.seaocore_profile_cover_icon_photo_add{
+  background-image:url(../images/add.png);
+}
+.seaocore_profile_cover_icon_photo_edit{
+  background-image:url(../images/edit.png);
+}
+.seaocore_profile_cover_icon_photo_upload {
+  background-image:url(../images/icons/photo.png);
+}
+.seaocore_profile_cover_icon_photo_view {
+  background-image:url(../images/icons/album.png);
+}
+.seaocore_profile_cover_icon_move {
+  background-image:url(../images/icons/move.png);
+}
+.seaocore_profile_cover_icon_photo_delete {
+  background-image:url(../images/icons/album_delete.png);
+}
+.seaocore_profile_cover_icon_camera {
+  background-image:url(../images/icons/camera.png);
+}*/
+.seaocore_profile_cover_icon_photo_color{
+  background-image:url(../images/icons/color.png);
+	padding: 5px 20px 5px 29px !important;
+}
+/*Cover Photo Add Edit Options Starts Here*/
+.seaocore_profile_cover_btn {
+  cursor:pointer;
+  background-color:#fff;
+  /*background-image:-webkit-gradient(linear, left top, left bottom, from( #ffffff), to( #f1f1f2)); *//* Saf4+, Chrome */
+  /*background-image:-webkit-linear-gradient( #ffffff, #f1f1f2);*/ /* Chrome 10+, Saf5.1+ */
+  /*background-image:-moz-linear-gradient( #ffffff, #f1f1f2);*/ /* FF3.6 */
+  /*background-image:-ms-linear-gradient( #ffffff, #f1f1f2);*/ /* IE10 */
+  /*background-image:-o-linear-gradient( #ffffff, #f1f1f2);*/ /* Opera 11.10+ */
+  /*background-image:linear-gradient( #ffffff, #f1f1f2);
+  border-radius:3px;*/
+  display:block;
+/*  -moz-box-shadow:0px 0px 3px rgba(0, 0, 0, .6);
+  -webkit-box-shadow:0px 0px 3px rgba(0, 0, 0, .6);
+  box-shadow:0px 0px 3px rgba(0, 0, 0, .6);*/
+}
+.seaocore_profile_cover_btn:hover{
+  cursor:pointer;
+  background-color:#fff;
+  background-image:-webkit-gradient(linear, left top, left bottom, from( #ffffff), to( #dfdfdf)); /* Saf4+, Chrome */
+  background-image:-webkit-linear-gradient( #ffffff, #dfdfdf); /* Chrome 10+, Saf5.1+ */
+  background-image:-moz-linear-gradient( #ffffff, #dfdfdf); /* FF3.6 */
+  background-image:-ms-linear-gradient( #ffffff, #dfdfdf); /* IE10 */
+  background-image:-o-linear-gradient( #ffffff, #dfdfdf); /* Opera 11.10+ */
+  background-image:linear-gradient( #ffffff, #dfdfdf);
+}
+.seaocore_profile_cover_btn i {
+  font-style:normal;
+  background-repeat:no-repeat;
+  background-position:5px center;
+  display:block;
+/*  font-size:11px;
+  font-weight:bold;*/
+  color:#333;
+  /*padding:5px 10px 5px 25px;*/
+}
+[dir="rtl"] .seaocore_profile_cover_btn i{
+  padding:5px 20px 5px 10px;
+  background-position: 99% center;
+}
+.seaocore_profile_cover_options {
+  display:none;
+}
+.seaocore_profile_cover_options .edit-button {
+  position:absolute;
+  top:10px;
+  right:70px;
+}
+[dir="rtl"] .seaocore_profile_cover_options .edit-button{
+  left:70px;
+  right:auto;
+}
+.seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+  right: 12px;
+  top: 5px;
+}
+[dir="rtl"] .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button{
+  left:12px;
+  right:auto;
+}
+.seaocore_profile_cover_photo_wrapper:hover .seaocore_profile_cover_options, 
+.seaocore_profile_main_photo_wrapper:hover .seaocore_profile_cover_options {
+  display:block;
+}
+.seaocore_profile_cover_options > ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+  border-radius:3px;
+}
+.seaocore_profile_options_pulldown,
+.seaocore_profile_cover_has_tabs .tab_pulldown_contents_wrapper {
+  background-color:#fff;
+ /* border:1px solid #999;*/
+  float:left;
+  position:absolute;
+  z-index:99;
+	font-size: 13px;
+}
+[dir="rtl"] .seaocore_profile_options_pulldown,
+[dir="rtl"] .seaocore_profile_cover_has_tabs .tab_pulldown_contents_wrapper{
+  float: right;
+}
+.seaocore_profile_settings_btn .seaocore_profile_options_pulldown, 
+.seaocore_profile_option_btn .seaocore_profile_options_pulldown {
+  top:30px;
+}
+ul.seaocore_profile_options_pulldown{
+  display:none;
+}
+.seaocore_profile_options_pulldown li a,
+.seaocore_profile_cover_has_tabs .tab_pulldown_contents_wrapper ul li{
+  font-style:normal;
+  font-weight:normal;
+  background-repeat:no-repeat;
+  background-position:5px center;
+  display:block;
+  /*font-size:11px;*/
+  color:#333;
+  font-weight:normal;
+  line-height:normal;
+  padding:5px 20px 5px 25px;
+  text-decoration:none;
+  white-space:nowrap;
+}
+[dir="rtl"] .seaocore_profile_options_pulldown li a,
+[dir="rtl"] .seaocore_profile_cover_has_tabs .tab_pulldown_contents_wrapper ul li{
+  padding:5px 25px 5px 20px;
+  background-position: 98% center;
+}
+.seaocore_profile_cover_options ul li i, 
+ul.seaocore_profile_options_pulldown > li > a, 
+ul.seaocore_profile_options_pulldown > li > ul > li > a {
+	padding:6px 10px;
+	line-height: 20px;
+	display: flex;
+}
+#sitecontent_cover_settings_options_pulldown li > ul > li > a,
+#siteuser_cover_settings_options_pulldown li > ul > li > a{padding:5px 20px 5px 25px;}
+ul.seaocore_profile_options_pulldown li a:hover,
+.seaocore_profile_cover_has_tabs .tab_pulldown_contents_wrapper ul li:hover,
+.seaocore_profile_cover_has_tabs .tab_pulldown_contents_wrapper ul li.active {
+  background-color:#CCC;
+}
+.seaocore_profile_settings_btn ul li a, 
+.seaocore_profile_option_btn ul li a,
+.seaocore_profile_cover_has_tabs .tab_pulldown_contents_wrapper ul li{
+  border-radius:0 !important;
+  background-image:none !important;
+  padding:5px 20px 5px 10px;
+}
+[dir="rtl"] .seaocore_profile_settings_btn ul li a, 
+[dir="rtl"] .seaocore_profile_option_btn ul li a,
+[dir="rtl"] .seaocore_profile_cover_has_tabs .tab_pulldown_contents_wrapper ul li{
+  padding:5px 10px 5px 20px;
+}
+.seaocore_profile_cover_options li:hover ul.seaocore_profile_options_pulldown {
+  display:block;
+}
+.seaocore_profile_cover_options .save-button {
+  right:10px;
+  bottom:10px;
+  position:absolute;
+	z-index: 1;
+}
+[dir="rtl"] .seaocore_profile_cover_options .save-button{
+  left:10px;
+  right:auto;
+}
+.seaocore_profile_cover_options .save-button span {
+  display:inline-block;
+  margin-left:5px;
+}
+[dir="rtl"] .seaocore_profile_cover_options .save-button span{
+  margin-left: 0;
+  margin-right: 5px;
+}
+.seaocore_profile_cover_options .save-button span i {
+  padding:5px;
+}
+.seaocore_profile_option_btn .icon_cog, 
+.seaocore_profile_option_btn .icon_down {
+ /* background-size:12px auto;*/
+  display:inline-block;
+  /*height:12px;*/
+  margin:0 2px;
+  position:relative;
+  /*top:2px;*/
+  width:17px;
+}
+/*.seaocore_profile_option_btn .icon_cog {
+  background-image:url(../images/icons/cog.png);
+}*/
+.seaocore_button.seaocore_profile_option_btn .icon_down {
+  /*background-image:url(../images/icons/down.png);*/
+	background-image: none;
+}
+.seaocore_cover_rsvp_button select{
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.seaocore_profile_options_pulldown.siteuser_cover_settings li a{
+  padding:5px 7px;
+}
+/*Cover Photo Add Edit Options Ends Here*/
+/*Cover Position Tip Start Here*/
+.cover_photo_wap .cover_tip_wrap {
+  line-height:26px;
+  position:absolute;
+  text-align:center;
+  top:50%;
+  margin-top:-13px;
+  width:100%;
+}
+.cover_photo_wap .cover_tip {
+  background:#546185 url(../images/icons/drag.png) 9px 8px no-repeat;
+  background-color:rgba(0, 0, 0, .4);
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  color:#fff;
+  display:inline;
+  font-size:13px;
+  font-weight:bold;
+  padding:4px 9px 6px 29px;
+}
+[dir="rtl"] .cover_photo_wap .cover_tip{
+  background-position: 223px center;
+  padding:4px 29px 6px 9px;
+}
+/*Cover Position Tip End Here*/
+/*Cover Photo Upload Photo Popup Starts Here*/
+.seaocore_upload_photo_popup {
+  margin:15px 0 0 15px;
+  width:400px;
+}
+[dir="rtl"] .seaocore_upload_photo_popup{
+  margin:15px 15px 0 0;
+}
+.seaocore_upload_photo_popup .form-label {
+  margin:10px 0 5px;
+  font-weight:bold;
+}
+.seaocore_upload_photo_popup .form-element input[type="file"]{
+  margin: 5px 0;
+}
+.seaocore_upload_photo_popup button {
+  clear:both;
+  margin-top:15px;
+}
+
+/*Cover Photo Upload Photo Popup Ends Here*/
+/*Cover Photo Choose Photo Popup Starts Here*/
+.seaocore_choose_photos_content ul.thumbs {
+  margin:10px 0;
+}
+.seaocore_choose_photos_content ul.thumbs li {
+  clear:none;
+  display:inline-block;
+  float:none;
+  height:auto;
+  margin-bottom:10px;
+  vertical-align:top;
+}
+/*Cover Photo Choose Photo Popup Endss Here*/
+/*Profile Info Widget*/
+.seaocore_profile_info h4 {
+  border:none;
+  margin-bottom:2px;
+  padding:0px;
+}
+.seaocore_profile_info h4 span {
+  position:static;
+  background:none;
+  padding:0;
+}
+.seaocore_profile_info ul li span {
+  font-size:12px;
+}
+
+/*Event Cover RSVP info tip CSS*/
+.seaocore_cover_member_tip{
+  border: 1px solid #000000;
+  margin-top: 10px;
+  padding: 0 10px 10px;
+  position: absolute;
+  width: 300px;
+  z-index: 11;
+}
+.seaocore_cover_member_tip_a{
+  position: absolute;
+  right: 20px;
+  top: -13px;
+}
+.seaocore_cover_member_tip_photo{
+  margin-right: 10px;
+}
+
+/*Profile Cover Members Starts Here*/
+.seaocore_members_cover_listing{
+	border-style:solid;
+	border-width:1px;
+	height:120px;
+	overflow:hidden;
+}
+.seaocore_members_cover_listing .seaocore_members_cover_member {
+	float: left;
+	height:120px;
+	overflow: hidden;
+	position: relative;
+	width: 120px;
+}
+.seaocore_members_cover_listing img.thumb_profile {
+  width:100%;
+  min-height:120px;
+  border:none;
+  float:left;
+}
+span.seaocore_members_cover_member_name {
+  display:none;
+  left:0;
+  right:0;
+  width:100%;
+  bottom:0px;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-image: -ms-linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-image: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-image: -webkit-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.0)), color-stop(1, rgba(0, 0, 0, 0.9)));
+  position:absolute;
+  text-align:center;
+  overflow:hidden;
+}
+span.seaocore_members_cover_member_name a {
+  text-decoration:none;
+  color:#fff;
+}
+.seaocore_members_cover_member:hover .seaocore_members_cover_member_name {
+  display:block;
+}
+/*Profile Cover Members Ends Here*/
+/*Facebook Like Button*/
+.seaocore_profile_cover_has_tabs .seaocore_profile_cover_fb_like_button{
+  bottom:15px;
+  position: absolute;
+}
+.seaocore_profile_cover_has_tabs .layout_Facebookse_facebookse_commonlike{
+  margin: 0;
+}
+.seaocore_profile_cover_has_tabs .fb_edge_widget_with_comment{
+  height: 50px;
+}
+.seaocore_profile_cover_fb_like_button .fb_iframe_widget span{
+  overflow: inherit !important;
+}
+.seaocore_profile_cover_fb_like_button .fb_iframe_widget{
+  z-index:12;
+}
+/*Sponsored Label*/
+.seaocore_coverphoto_profile_label{
+	clear:both;
+	color:#FFFFFF;
+	font-size:17px;
+	letter-spacing:3px;
+	padding:5px 0;
+	text-align:center;
+	width:100%;
+}
+[dir="rtl"] .seaocore_coverphoto_profile_label{
+	text-align:center;
+}
+/*Below css apply when there is no tab container*/
+.seaocore_notabs .seaocore_profile_cover_has_tabs.seaocore_profile_cover_head_section{
+  border-width: 0;
+	min-height:0;
+	padding:0 10px;
+}
+.seaocore_notabs .seaocore_profile_cover_has_tabs.seaocore_profile_cover_head_section .seaocore_profile_main_photo_wrapper{
+  height: 0;
+}
+.seaocore_notabs .seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_status, 
+.seaocore_notabs .seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_buttons {
+  bottom: 20px;
+}
+.seaocore_button i.plus_icon{
+	background-image:url(../images/icons/plus13.png);
+}
+.seaocore_button i.minus_icon{
+	background-image:url(../images/icons/minus13.png);
+}
+.siteevent_addcalender .layout_siteevent_add_to_my_calendar_siteevent{margin-bottom:0;}
+.siteevent_addcalender .siteevent_calender_button .siteevent_buttonlink > span {padding-left:0;background-image: none;}
+
+/*Full width Cover Photo*/
+/*Content and user profile pages*/
+.seaocore_profile_fullwidth_cover_photo + .seaocore_profile_cover_head_section { display: block !important;}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo {margin-left: 20px; bottom: 15px;}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {right: 0;}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_photo{background-color:#070826;}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_photo img{opacity:0.7;}
+html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status *,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status a:link{text-align:center; font-size:15px; float:none !important; overflow:visible;max-width:100%;}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status h2{font-size:25px; overflow:hidden; font-weight: bold !important;}
+html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status h2 > a:link{font-size:60px !important;  line-height:70px !important;}
+html .seaocore_profile_fullwidth_cover_photo .siteverify_tip_wrapper {right: auto;top: 21px; width: 100%;}
+html .seaocore_profile_fullwidth_cover_photo .siteverify_tip {font-size: 12px !important;line-height: normal; margin-top: 0;}
+html .seaocore_profile_fullwidth_cover_photo .rating_text { color: #fff;}
+html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status{
+	bottom: 0; 
+	margin-bottom: 30px;
+	position: relative;
+	max-width:100%; 
+	float:none;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons{
+	bottom: 0;
+	float: none; 
+	position: relative;
+	text-align: center;
+}
+html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons > div{
+	float:none; 
+	display:inline-block; 
+	vertical-align:top;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+	display: table-cell;
+	position: relative;
+	vertical-align: middle;
+	width: 10%;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_options .edit-button,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_options .save-button{
+	position: absolute;
+	z-index: 12;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options {
+	bottom: 0;
+	position: absolute;
+	z-index: 12;
+	width: 176px;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper {
+	position: static;
+	float: none;
+	margin: 0 auto;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_like_button > a:hover,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_button > a:hover,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .sitepage_button:hover,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .sitegroup_button:hover {
+	background-image: none !important;
+	opacity: 0.8;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .siteevent_calender_button .siteevent_buttonlink,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner .seaocore_button > a, 
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner .seaocore_like_button a,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .sitepage_button,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .sitegroup_button:hover {
+	padding: 5px 20px;
+}
+div.seaocore_profile_fullwidth_cover_photo i.siteevent_icon_strip.siteevent_icon,
+div.seaocore_profile_fullwidth_cover_photo i.seao_icon_strip.seao_icon {
+	display: inline-block;
+	text-align: center;
+}
+#sitecontent_cover_photo #sitecontentcover_middle_content, #siteuser_cover_photo #siteusercover_middle_content {
+  position: relative;
+	z-index: 12;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .siteevent_listings_stats,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .seao_listings_stats {
+	margin-bottom: 30px;
+	margin-top: 0;
+}
+html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .siteevent_listings_stats *,
+html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .seao_listings_stats * {
+	font-size:17px;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .siteevent_listings_stats i {
+	display: none;
+}
+/*.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo {
+	border-radius: 50%;
+	bottom: 1% !important;
+}*/
+/*.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo .item_photo {
+	height: 120px;
+	min-height: 120px;
+	width: 120px;
+	border-radius: 50%;
+}*/
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo .item_photo table td img {
+  min-height: 120px;
+}
+.seaocore_profile_coverinfo_buttons .siteevent_grid_footer {
+	position: relative;
+}
+.seaocore_profile_coverinfo_buttons .siteevent_share_links.dropdown-menu {
+	margin-top: 8px;
+	min-width: 180px;
+	padding: 5px;
+	text-align: left;
+	width: 100%;
+	box-sizing: border-box;
+	position:absolute;
+	z-index: 1;
+	top:30px;
+	right:0;
+}
+.seaocore_profile_coverinfo_buttons .siteevent_share_links.dropdown-menu::after {
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	content: " ";
+	display: inline-block;
+	right: 7%;
+	position: absolute;
+	top: -10px;
+}
+.seaocore_profile_coverinfo_buttons .siteevent_share_links.dropdown-menu li > a{
+  padding: 5px;
+	display: block;
+}
+.seaocore_profile_coverinfo_buttons .siteevent_share_links.dropdown-menu li > a:hover{
+	background-color: rgba(0, 0, 0, 0.04);
+	text-decoration: none;
+}
+.seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+	z-index: 2147483647;
+}
+/*---------USER COVER PHOTO CSS END HERE----------------*/
+
+/*----------------------------------------RESPONSIVENESS WORK----------------------------------------------*/
+@media only screen and (max-width: 920px) {
+	.seaocore_profile_cover_photo img{ top:0 !important;}
+	.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_status h2 { font-size:20px;}
+	.seaocore_profile_coverinfo_buttons > div {margin-bottom: 5px; margin-top: 5px;}
+	/*Full width cover photo*/
+	.seaocore_profile_cover_no_profile_photo div.tabs_alt {width:100%;}
+	html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status {margin-left: 0px!important;}
+	/*Cover photo with inside tabs*/
+	div.seaocore_profile_cover_has_tabs .seaocore_profile_main_photo, div.seaocore_profile_main_photo {bottom: 15px;}
+	div.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_status h2, div.seaocore_profile_coverinfo_status h2 {font-size: 16px;}
+	div.layout_core_container_tabs div.tabs_alt {margin: 10px 0 !important;position:relative !important;}
+	div.seaocore_profile_cover_has_tabs + .seaocore_profile_cover_head_section {background-color: transparent; border: 0 none; box-shadow: none;}
+	div.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_buttons {margin: 0; top: -12px;}
+	div.seaocore_profile_cover_has_tabs .seaocore_profile_cover_head_section_inner,
+	div.seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_status,
+	div.seaocore_profile_cover_has_tabs > .seaocore_profile_cover_head_section_inner {margin-left: auto;}
+	div.seaocore_profile_cover_has_tabs .seaocore_profile_main_photo_wrapper + .seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_status { margin-left: 180px;}
+	/*Fb like button*/
+	div.seaocore_profile_cover_has_tabs .seaocore_profile_cover_fb_like_button {display:none;}
+	div.seaocore_profile_cover_has_tabs.seaocore_profile_cover_has_fblike .seaocore_profile_coverinfo_status {bottom:30px;}
+	/*Album Cover photo*/
+	div.seaocore_profile_coverinfo_statistics span {font-size: 14px;}
+	div.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_statistics,
+	div.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_statistics > div {text-shadow: 0 1px 1px transparent;}
+}
+@media only screen and (max-width: 768px) {
+	.seaocore_profile_main_photo_wrapper{margin-left:0;margin-bottom:50px;}
+	/*full width Cover Photo*/
+	html div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status *, 
+	div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status a:link {font-size: 15px !important;}
+	html div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status {margin-bottom:15px; margin-left:0;}
+	html div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status h2{font-size:20px !important;line-height: 25px !important;}
+	html div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .siteevent_listings_stats * {font-size: 18px !important;}
+	html div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .siteevent_listings_stats, 
+	html div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .seao_listings_stats {margin-bottom:15px;}
+	.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons {float:none; width:auto;}	
+	#siteuser_cover_photo #siteusercover_middle_content, 
+	div#sitecontent_cover_photo #sitecontentcover_middle_content {height: 250px !important;margin-top: -250px !important;}
+	.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo .item_photo table td img {min-height: 75px;}
+	/*Cover photo with inside tabs*/
+	.seaocore_profile_cover_photo_wrapper.seaocore_profile_cover_has_tabs,
+	.seaocore_profile_fullwidth_cover_photo .cover_photo_wap, 
+	.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner, 
+	div.seaocore_profile_cover_photo, .seaocore_profile_cover_photo_wrapper {height:250px !important;}
+	div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_gradient {bottom: 0px;}
+	div.seaocore_profile_main_photo .item_photo, 
+	.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo .item_photo {height: 75px; min-height: 75px; width: 75px;}
+	div.seaocore_profile_main_photo .item_photo table td img {min-height: 75px;}
+	div.seaocore_profile_main_photo_wrapper {margin: 0; width: 90px;}
+	div.seaocore_profile_cover_head_section { padding: 1%;}
+	div.seaocore_profile_cover_has_tabs .seaocore_profile_cover_head_section_inner,
+	div.seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_status,
+	div.seaocore_profile_cover_has_tabs > .seaocore_profile_cover_head_section_inner {margin-left: auto;}
+	div.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_status {max-width: 100%; margin-left: 90px;}
+	div.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_buttons {margin: 0; top: -7px;}
+	.seaocore_profile_fullwidth_cover_photo.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_buttons {bottom: auto;top: auto;}
+	div.seaocore_profile_cover_has_tabs .seaocore_profile_main_photo_wrapper + .seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_status { margin-left: 80px;}
+	div.seaocore_profile_cover_head_section_inner {box-sizing: border-box; margin-left: auto; position: absolute; width: 98%;}
+}
+@media only screen and (max-width: 600px) {
+	div.seaocore_profile_cover_has_tabs .seaocore_profile_coverinfo_buttons {bottom: -35px;margin: 0; top: auto !important;}
+	div.layout_core_container_tabs div.tabs_alt {margin: 0 !important; position: relative;}
+	/*Cover Photo Upload Photo Popup Starts Here*/
+  .seaocore_upload_photo_popup {margin: 1%;width:98%;}
+	/*Choose photos popup*/
+	.seaocore_choose_photos_content ul.thumbs li {margin: 1%; width: 46%;}
+	ul.thumbs .thumbs_photo { width: 100%; box-sizing: border-box;}
+	ul.thumbs .thumbs_photo > span {width: 100%;}
+}
+@media only screen and (max-width: 450px) {
+	/*Album Cover photo*/
+	div.seaocore_profile_coverinfo_buttons > div {margin-right: 0;margin-left: 3px;}
+}
+

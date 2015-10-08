@@ -1,0 +1,17 @@
+
+/* Slider Style */
+.slide_container{width: 164px;}
+.slider_gutter_item{position: relative;	float: left; left: 100%;}
+#slider_minmax_gutter_l, #slider_minmax_gutter_r, #slider_minmax_gutter_m{background:#fff url(../images/slider/slider_rptr.gif) repeat-x;height:6px;}
+#slider_minmax_gutter_l, 
+.slider_gutter_l{width: 8px;left:0;}
+#slider_minmax_gutter_m{width: 148px;margin-left:-156px;}
+#slider_minmax_gutter_r,
+.slider_gutter_r{width:8px;margin-left:-8px;height:5px;}
+#minmax_slider{ width:156px; margin:0px;float: left;}
+.slider_gutter{width:130px; margin:10px 0px 0px 0px; }
+.slider_gutter_m{width:120px;margin-left:-150px;	height:20px; background:url(../images/slider/slider_rptr.gif) repeat-x;}
+.price_range_txt {font-size:11px;margin:10px 0 0;}
+.knob {position: absolute;	height: 15px;width: 8px;background: url(../images/slider/slider_knob.gif) no-repeat;cursor: pointer;margin-top: -4px;z-index: 1;}
+/* For Clip */
+#slider_bkg_img{background-color: #464646; position: absolute; height:5px; margin:0; width:148px;}
